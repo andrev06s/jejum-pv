@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171e19" />
+
+  <title>Os 4 Jejuns Bíblicos — Desinflame o corpo e renove sua fé por R$10</title>
+  <meta name="description" content="O mesmo jejum que transformou Daniel, Ester, Elias e Moisés agora ao alcance da sua rotina. Guia digital prático com os 4 protocolos bíblicos por apenas R$10." />
+  <meta name="keywords" content="jejum bíblico, jejum de daniel, jejum de ester, jejum de elias, jejum de moisés, desinflamar, saúde cristã, fé prática" />
+  <meta name="author" content="Os 4 Jejuns Bíblicos" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Os 4 Jejuns Bíblicos — Desinflame o corpo e renove sua fé por R$10" />
+  <meta property="og:description" content="O mesmo jejum que transformou Daniel, Ester, Elias e Moisés. Acesso imediato no WhatsApp e e-mail." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Os 4 Jejuns Bíblicos" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Os 4 Jejuns Bíblicos — por R$10" />
+  <meta name="twitter:description" content="O segredo para desinflamar seu corpo e renovar sua mente está escrito há mais de 2500 anos." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET ---------- */
+    *,
+    *::before,
+    *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      color: #171e19;
+      background: #ffffff;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: 0; background: none; }
+    ul { list-style: none; }
+
+    /* ---------- VARIÁVEIS ---------- */
+    :root {
+      --charcoal: #171e19;
+      --dark: #272727;
+      --sage: #b7c6c2;
+      --yellow: #ffe17c;
+      --white: #ffffff;
+      --radius: 0.5rem;
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --container: 1200px;
+    }
+
+    /* ---------- UTILITÁRIOS ---------- */
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    .anton { font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; line-height: 0.9; letter-spacing: normal; font-weight: 400; }
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(183, 198, 194, 0.25) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(183, 198, 194, 0.25) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .grid-bg-dark {
+      background-image:
+        linear-gradient(to right, rgba(183, 198, 194, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(183, 198, 194, 0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* ---------- HIGHLIGHT AMARELO ---------- */
+    .hl {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      padding: 0 0.15em;
+    }
+    .hl::before {
+      content: "";
+      position: absolute;
+      inset: 8% -4% 8% -4%;
+      background: var(--yellow);
+      transform: rotate(-2deg);
+      z-index: -1;
+    }
+    .hl-tilt::before { transform: rotate(-3deg); }
+
+    /* ---------- BADGE ---------- */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(23, 30, 25, 0.15);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+    }
+    .badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--yellow);
+      box-shadow: 0 0 0 4px rgba(255, 225, 124, 0.35);
+    }
+    .badge-dark {
+      border-color: rgba(183, 198, 194, 0.2);
+      background: rgba(23, 30, 25, 0.6);
+      color: var(--white);
+    }
+
+    /* ---------- BOTÕES ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      padding: 1.15rem 1.75rem;
+      border-radius: var(--radius);
+      transition: transform 300ms var(--ease), box-shadow 300ms var(--ease), background 300ms var(--ease);
+      font-size: 1.15rem;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--yellow);
+      color: var(--charcoal);
+      box-shadow: 0 10px 30px -10px rgba(255, 225, 124, 0.55);
+    }
+    .btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 20px 40px -10px rgba(255, 225, 124, 0.7); }
+    .btn-dark {
+      background: var(--charcoal);
+      color: var(--white);
+      box-shadow: 0 10px 30px -10px rgba(23, 30, 25, 0.5);
+    }
+    .btn-dark:hover { transform: translateY(-2px) scale(1.02); }
+    .btn-lg { font-size: 1.4rem; padding: 1.35rem 2.25rem; }
+    .btn-xl { font-size: 1.6rem; padding: 1.5rem 2.5rem; }
+
+    /* ---------- HEADER ---------- */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(23, 30, 25, 0.08);
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+    .logo .accent { color: var(--yellow); -webkit-text-stroke: 1px var(--charcoal); }
+    .logo .dot { color: var(--yellow); }
+    .header-cta {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      font-family: 'Satoshi', sans-serif;
+      letter-spacing: 0;
+      text-transform: none;
+      transition: transform 200ms var(--ease);
+    }
+    .header-cta:hover { transform: scale(1.04); }
+    body { padding-top: 72px; }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      padding: 3rem 0 4rem;
+      background: var(--white);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(183, 198, 194, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(183, 198, 194, 0.3) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: clamp(2.5rem, 7vw, 6.5rem);
+      line-height: 0.9;
+      margin: 1.5rem 0;
+      letter-spacing: -0.01em;
+    }
+    .hero .subhead {
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      color: rgba(23, 30, 25, 0.7);
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.55;
+    }
+    .hero-cta-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .hero-micro {
+      font-size: 0.85rem;
+      color: rgba(23, 30, 25, 0.6);
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- SECTION BASE ---------- */
+    section {
+      padding: 5rem 0;
+      position: relative;
+    }
+    .section-eyebrow {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: rgba(23, 30, 25, 0.55);
+      margin-bottom: 1rem;
+    }
+    .section-eyebrow.dark { color: rgba(183, 198, 194, 0.7); }
+    .section-title {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 0.95;
+      margin-bottom: 1.25rem;
+    }
+    .section-lead {
+      font-size: 1.1rem;
+      max-width: 700px;
+      color: rgba(23, 30, 25, 0.7);
+      line-height: 1.6;
+    }
+
+    /* ---------- SEÇÃO 2: DORES (CHECKLIST) ---------- */
+    .pain {
+      background: var(--white);
+      border-top: 1px solid rgba(23, 30, 25, 0.08);
+      border-bottom: 1px solid rgba(23, 30, 25, 0.08);
+    }
+    .pain-grid {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid rgba(23, 30, 25, 0.1);
+      border-radius: var(--radius);
+      background: #fafafa;
+      transition: transform 300ms var(--ease), box-shadow 300ms var(--ease);
+    }
+    .pain-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px -10px rgba(23, 30, 25, 0.12);
+    }
+    .pain-check {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Anton', sans-serif;
+      color: var(--charcoal);
+      font-size: 0.95rem;
+    }
+    .pain-text {
+      font-size: 1rem;
+      line-height: 1.45;
+      color: var(--charcoal);
+    }
+
+    /* ---------- SEÇÃO 3: REVELAÇÃO (CONTRASTE) ---------- */
+    .reveal {
+      background: var(--charcoal);
+      color: var(--white);
+      position: relative;
+    }
+    .reveal::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(183, 198, 194, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(183, 198, 194, 0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .reveal-inner { position: relative; }
+    .reveal .section-title { color: var(--white); }
+    .reveal-body {
+      max-width: 760px;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .reveal-body p { margin-bottom: 1.15rem; }
+    .reveal-body strong { color: var(--yellow); font-weight: 500; }
+
+    /* ---------- SEÇÃO 4: CARDS DOS 4 JEJUNS ---------- */
+    .products { background: var(--white); }
+    .products-head { text-align: center; max-width: 700px; margin: 0 auto 3.5rem; }
+    .products-head .section-lead { margin: 0 auto; }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      position: relative;
+      padding: 2rem 1.75rem 1.75rem;
+      border: 1px solid rgba(23, 30, 25, 0.1);
+      border-radius: var(--radius);
+      background: #fafafa;
+      transition: transform 300ms var(--ease), box-shadow 300ms var(--ease), background 300ms var(--ease);
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -15px rgba(23, 30, 25, 0.2);
+      background: var(--white);
+    }
+    .card-num {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      font-family: 'Anton', sans-serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: rgba(255, 225, 124, 0.5);
+      transition: color 300ms var(--ease);
+    }
+    .card:hover .card-num { color: var(--yellow); }
+    .card-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(23, 30, 25, 0.55);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .card-title {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.75rem;
+      line-height: 1;
+      margin-bottom: 0.85rem;
+    }
+    .card-sub {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: rgba(23, 30, 25, 0.7);
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .card-list li::before {
+      content: "✓";
+      color: var(--charcoal);
+      background: var(--yellow);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .card-verse {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(23, 30, 25, 0.1);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(23, 30, 25, 0.55);
+      font-weight: 500;
+    }
+
+    /* ---------- SEÇÃO 5: O QUE VOCÊ RECEBE ---------- */
+    .receive {
+      background: var(--charcoal);
+      color: var(--white);
+      position: relative;
+    }
+    .receive::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(183, 198, 194, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(183, 198, 194, 0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .receive-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .receive .section-title { color: var(--white); }
+    .receive .price-tag {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 1rem 1.5rem;
+      background: var(--yellow);
+      color: var(--charcoal);
+      border-radius: var(--radius);
+      transform: rotate(-2deg);
+    }
+    .receive .price-tag .small { font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'Satoshi', sans-serif; }
+    .receive .price-tag .big { font-family: 'Anton', sans-serif; font-size: 3rem; line-height: 1; }
+    .receive-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .receive-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(183, 198, 194, 0.12);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      line-height: 1.45;
+      transition: background 300ms var(--ease), transform 300ms var(--ease);
+    }
+    .receive-list li:hover {
+      background: rgba(255, 225, 124, 0.08);
+      transform: translateX(4px);
+    }
+    .receive-list .icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--charcoal);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 1px;
+    }
+
+    /* ---------- SEÇÃO 6: TRANSFORMAÇÃO ---------- */
+    .transform { background: var(--white); }
+    .transform-grid {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .transform-card {
+      padding: 1.75rem 1.5rem;
+      border: 1px solid rgba(23, 30, 25, 0.1);
+      border-radius: var(--radius);
+      background: #fafafa;
+      transition: transform 300ms var(--ease), box-shadow 300ms var(--ease);
+    }
+    .transform-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px -12px rgba(23, 30, 25, 0.15);
+    }
+    .transform-card .num {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      line-height: 1;
+      color: rgba(255, 225, 124, 0.6);
+      margin-bottom: 0.75rem;
+    }
+    .transform-card .text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+
+    /* ---------- SEÇÃO 7: PREÇO/MISSÃO ---------- */
+    .mission {
+      background: var(--white);
+      border-top: 1px solid rgba(23, 30, 25, 0.08);
+    }
+    .mission-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .mission-body {
+      margin-top: 2rem;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: rgba(23, 30, 25, 0.8);
+    }
+    .mission-body p { margin-bottom: 1.15rem; }
+
+    /* ---------- SEÇÃO 8: GARANTIA ---------- */
+    .guarantee {
+      background: var(--dark);
+      color: var(--white);
+      position: relative;
+    }
+    .guarantee-inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 3rem;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .guarantee-seal {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--charcoal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+      flex-shrink: 0;
+      transform: rotate(-6deg);
+      box-shadow: 0 20px 50px -10px rgba(255, 225, 124, 0.3);
+      position: relative;
+    }
+    .guarantee-seal::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 2px dashed rgba(23, 30, 25, 0.3);
+      border-radius: 50%;
+    }
+    .guarantee-seal-inner {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      line-height: 0.95;
+    }
+    .guarantee-seal-inner .big { font-size: 3rem; display: block; }
+    .guarantee-seal-inner .small { font-size: 0.85rem; letter-spacing: 0.1em; }
+    .guarantee .section-title { color: var(--white); }
+    .guarantee-body {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* ---------- SEÇÃO 9: FAQ ---------- */
+    .faq { background: var(--white); }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-head { text-align: center; margin-bottom: 3rem; }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    details.faq-item {
+      border: 1px solid rgba(23, 30, 25, 0.12);
+      border-radius: var(--radius);
+      background: #fafafa;
+      transition: border-color 300ms var(--ease), background 300ms var(--ease);
+      overflow: hidden;
+    }
+    details.faq-item[open] {
+      border-color: var(--charcoal);
+      background: var(--white);
+    }
+    details.faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      line-height: 1.15;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after {
+      content: "+";
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--charcoal);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: transform 300ms var(--ease);
+    }
+    details.faq-item[open] summary::after { content: "−"; }
+    details.faq-item .answer {
+      padding: 0 1.5rem 1.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: rgba(23, 30, 25, 0.75);
+    }
+
+    /* ---------- SEÇÃO 10: CTA FINAL ---------- */
+    .final-cta {
+      background: var(--yellow);
+      color: var(--charcoal);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .final-cta::before {
+      content: "JEJUM";
+      position: absolute;
+      top: -2rem;
+      left: -1rem;
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(8rem, 25vw, 22rem);
+      line-height: 0.85;
+      color: rgba(23, 30, 25, 0.07);
+      pointer-events: none;
+      letter-spacing: -0.02em;
+    }
+    .final-cta::after {
+      content: "BÍBLICO";
+      position: absolute;
+      bottom: -3rem;
+      right: -1rem;
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(8rem, 25vw, 22rem);
+      line-height: 0.85;
+      color: rgba(23, 30, 25, 0.07);
+      pointer-events: none;
+      letter-spacing: -0.02em;
+    }
+    .final-cta-inner {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .final-cta h2 {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: clamp(2.25rem, 6vw, 5rem);
+      line-height: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    .final-cta-lead {
+      font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.5;
+      color: rgba(23, 30, 25, 0.85);
+    }
+    .final-cta .btn-dark { box-shadow: 0 20px 40px -10px rgba(23, 30, 25, 0.4); }
+    .final-cta-micro {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: rgba(23, 30, 25, 0.7);
+    }
+    .scarcity {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 0.65rem 1.25rem;
+      background: var(--charcoal);
+      color: var(--yellow);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 3rem 0 2rem;
+      font-size: 0.9rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .footer-grid h4 {
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .footer-grid a, .footer-grid li {
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 200ms var(--ease);
+    }
+    .footer-grid a:hover { color: var(--yellow); }
+    .footer-bottom {
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(183, 198, 194, 0.15);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .disclaimer {
+      max-width: 700px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* ---------- STICKY MOBILE CTA ---------- */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+      background: var(--charcoal);
+      border-top: 2px solid var(--yellow);
+      z-index: 99;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+    }
+    .sticky-cta .btn {
+      width: 100%;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    /* ---------- RESPONSIVO ---------- */
+    @media (max-width: 900px) {
+      section { padding: 4rem 0; }
+      .receive-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .guarantee-inner { grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+      .guarantee-seal { margin: 0 auto; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+    @media (max-width: 640px) {
+      .header-cta { display: none; }
+      .hero { padding: 2rem 0 3rem; min-height: auto; }
+      .hero h1 { margin: 1rem 0; }
+      .btn { padding: 1rem 1.25rem; font-size: 1rem; }
+      .btn-lg, .btn-xl { font-size: 1.15rem; padding: 1.1rem 1.5rem; }
+      section { padding: 3.5rem 0; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .sticky-cta { display: block; }
+      body { padding-bottom: 84px; }
+      .pain-grid, .cards-grid, .transform-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 420px) {
+      .container { padding: 0 1rem; }
+      .guarantee-seal { width: 160px; height: 160px; }
+      .guarantee-seal-inner .big { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Os 4 Jejuns Bíblicos">
+        Os 4 Jejuns<span class="dot">.</span>
+      </a>
+      <a href="#cta-final" class="header-cta">Comprar por R$10</a>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 1 — HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="badge"><span class="dot"></span>Material digital cristão • Entrega imediata</span>
+
+        <h1>
+          E se o segredo para <span class="hl">desinflamar</span> o seu corpo e renovar sua mente já estivesse escrito há mais de <span class="hl hl-tilt">2500 anos?</span>
+        </h1>
+
+        <p class="subhead">
+          O mesmo jejum que transformou Daniel, Ester, Elias e Moisés agora ao alcance da sua rotina. Sem shake caro, sem cápsula importada, sem coach de R$497.
+        </p>
+
+        <div class="hero-cta-stack">
+          <a href="#cta-final" class="btn btn-primary btn-lg">Quero começar meu jejum bíblico por R$10</a>
+          <span class="hero-micro">Acesso imediato no WhatsApp e e-mail • Pagamento 100% seguro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2 — DORES -->
+  <section class="pain" id="dores">
+    <div class="container">
+      <span class="section-eyebrow">Identificação</span>
+      <h2 class="section-title">Se você se identifica com pelo menos <span class="hl">3 dos itens</span> abaixo, essa página é pra você</h2>
+
+      <ul class="pain-grid">
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Você acorda cansado mesmo dormindo bem</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Sente o intestino preso, inchaço constante e a digestão pesada</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Já tentou dietas, suplementos e protocolos que não duraram</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Sente que sua oração "não sobe" como antes</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Tem dificuldade de manter foco e clareza mental durante o dia</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Desconfia de coaches, gurus e "especialistas" caros do bem-estar</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Quer viver sua fé de forma prática, não só no domingo</span></li>
+        <li class="pain-item"><span class="pain-check">✓</span><span class="pain-text">Sente que falta algo entre o que você lê na Bíblia e o que você vive</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3 — REVELAÇÃO -->
+  <section class="reveal" id="revelacao">
+    <div class="container reveal-inner">
+      <span class="section-eyebrow dark">A verdade</span>
+      <h2 class="section-title">O que a indústria do bem-estar esconde está <span class="hl">escrito na Bíblia</span> há 2500 anos</h2>
+
+      <div class="reveal-body">
+        <p>Cobram R$497 pra te ensinar o que Daniel já fazia antes de Cristo nascer.</p>
+        <p>Daniel jejuou por 21 dias com apenas sementes, legumes e água. No final, a Bíblia registra em <strong>Daniel 1:15</strong> que ele estava mais forte, mais bonito e mais sábio que todos os jovens que comiam da mesa do rei.</p>
+        <p>Não é alegoria. É resultado físico, mental e espiritual documentado.</p>
+        <p>Ester jejuou 3 dias antes de mudar o destino de uma nação. Elias andou 40 dias na força de um único alimento. Moisés ficou 40 dias no monte e desceu com o rosto brilhando.</p>
+        <p>O mundo descobriu agora que o jejum desinflama, regenera células, limpa o intestino e clareia a mente. <strong>A Bíblia ensinou primeiro. E ninguém te contou.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4 — APRESENTAÇÃO DOS 4 JEJUNS -->
+  <section class="products" id="produto">
+    <div class="container">
+      <div class="products-head">
+        <span class="section-eyebrow">O produto</span>
+        <h2 class="section-title">Conheça <span class="hl">Os 4 Jejuns Bíblicos</span></h2>
+        <p class="section-lead">Um guia prático com os 4 protocolos de jejum resgatados diretamente das escrituras, passo a passo, pra você começar ainda essa semana.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- CARD 1 -->
+        <article class="card">
+          <span class="card-num">01</span>
+          <p class="card-eyebrow">21 dias</p>
+          <h3 class="card-title">Jejum de Daniel</h3>
+          <p class="card-sub">"O jejum da clareza mental e da disciplina"</p>
+          <ul class="card-list">
+            <li>Para quem quer foco, sabedoria e desinflamação profunda</li>
+            <li>Sementes, legumes e água</li>
+          </ul>
+          <p class="card-verse">Daniel 1:12</p>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <span class="card-num">02</span>
+          <p class="card-eyebrow">3 dias</p>
+          <h3 class="card-title">Jejum de Ester</h3>
+          <p class="card-sub">"O jejum da decisão e da coragem"</p>
+          <ul class="card-list">
+            <li>Para momentos de virada, decisões importantes e batalha espiritual</li>
+            <li>Jejum total com água</li>
+          </ul>
+          <p class="card-verse">Ester 4:16</p>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <span class="card-num">03</span>
+          <p class="card-eyebrow">40 dias</p>
+          <h3 class="card-title">Jejum de Elias</h3>
+          <p class="card-sub">"O jejum da força sobrenatural"</p>
+          <ul class="card-list">
+            <li>Para quem precisa atravessar um deserto pessoal com força que não vem de você</li>
+            <li>Protocolo adaptado e seguro</li>
+          </ul>
+          <p class="card-verse">1 Reis 19:8</p>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="card">
+          <span class="card-num">04</span>
+          <p class="card-eyebrow">40 dias</p>
+          <h3 class="card-title">Jejum de Moisés</h3>
+          <p class="card-sub">"O jejum do encontro"</p>
+          <ul class="card-list">
+            <li>Para quem busca um encontro profundo com Deus e renovação total</li>
+            <li>Protocolo guiado com adaptação moderna segura</li>
+          </ul>
+          <p class="card-verse">Êxodo 34:28</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5 — O QUE VOCÊ RECEBE -->
+  <section class="receive" id="recebe">
+    <div class="container">
+      <div class="receive-grid">
+        <div>
+          <span class="section-eyebrow dark">Entregáveis</span>
+          <h2 class="section-title">Tudo isso por</h2>
+          <div class="price-tag">
+            <span class="small">R$</span><span class="big">10</span>
+          </div>
+        </div>
+        <ul class="receive-list">
+          <li><span class="icon">✓</span><span>Os 4 protocolos completos de jejum, passo a passo</span></li>
+          <li><span class="icon">✓</span><span>O que comer, o que beber e o que evitar em cada um</span></li>
+          <li><span class="icon">✓</span><span>Como começar e como quebrar o jejum sem fazer mal ao corpo</span></li>
+          <li><span class="icon">✓</span><span>As orações específicas de cada jejum bíblico</span></li>
+          <li><span class="icon">✓</span><span>Versículos de apoio pra cada dia</span></li>
+          <li><span class="icon">✓</span><span>Guia rápido pra iniciantes que nunca jejuaram</span></li>
+          <li><span class="icon">✓</span><span>Acesso imediato no WhatsApp e no e-mail</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6 — TRANSFORMAÇÃO -->
+  <section class="transform" id="transformacao">
+    <div class="container">
+      <span class="section-eyebrow">A transformação</span>
+      <h2 class="section-title">O que muda na sua vida <span class="hl">quando você começa</span></h2>
+
+      <div class="transform-grid">
+        <div class="transform-card">
+          <p class="num">01</p>
+          <p class="text">Intestino funcionando, inchaço indo embora</p>
+        </div>
+        <div class="transform-card">
+          <p class="num">02</p>
+          <p class="text">Mente clara, foco renovado, sono profundo</p>
+        </div>
+        <div class="transform-card">
+          <p class="num">03</p>
+          <p class="text">Disposição que você não sentia há anos</p>
+        </div>
+        <div class="transform-card">
+          <p class="num">04</p>
+          <p class="text">Oração com profundidade que você não sentia há muito tempo</p>
+        </div>
+        <div class="transform-card">
+          <p class="num">05</p>
+          <p class="text">Sensação real de presença de Deus na rotina</p>
+        </div>
+        <div class="transform-card">
+          <p class="num">06</p>
+          <p class="text">Uma fé que se vive na cozinha, no quarto e no corpo, não só no culto</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#cta-final" class="btn btn-dark btn-lg">Quero começar meu jejum por R$10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7 — JUSTIFICATIVA DO PREÇO -->
+  <section class="mission" id="missao">
+    <div class="container">
+      <div class="mission-inner">
+        <span class="section-eyebrow">Nossa missão</span>
+        <h2 class="section-title">Por que apenas <span class="hl">R$10?</span></h2>
+
+        <div class="mission-body">
+          <p>Quisemos deixar acessível pra todos, porque entendemos que a Palavra de Deus não pode ter preço.</p>
+          <p>Mas o trabalho de resgatar esse conhecimento, estudar as escrituras, comparar traduções e organizar cada jejum num passo a passo prático levou meses de dedicação.</p>
+          <p>Os 10 reais cobrem nossos custos e nos permitem continuar essa missão de levar a sabedoria bíblica pra dentro do lar de cada cristão que ainda não teve acesso a ela.</p>
+          <p>Quando você adquire o seu, não está só transformando o seu corpo e sua fé. Está ajudando essa mensagem a chegar em mais uma casa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8 — GARANTIA -->
+  <section class="guarantee" id="garantia">
+    <div class="container">
+      <div class="guarantee-inner">
+        <div class="guarantee-seal" aria-label="Garantia de 7 dias">
+          <div class="guarantee-seal-inner">
+            <span class="small">Garantia de</span>
+            <span class="big">7</span>
+            <span class="small">Dias</span>
+          </div>
+        </div>
+        <div>
+          <span class="section-eyebrow dark">Risco zero</span>
+          <h2 class="section-title">Você não tem <span class="hl">nada a perder</span></h2>
+          <p class="guarantee-body">
+            Se você abrir o material, ler os protocolos e sentir que não é pra você, basta nos chamar no WhatsApp em até 7 dias e devolvemos os 10 reais. Sem perguntas, sem burocracia. A gente confia tanto no que reuniu aqui que prefere assumir o risco no seu lugar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9 — FAQ -->
+  <section class="faq" id="faq">
+    <div class="container faq-inner">
+      <div class="faq-head">
+        <span class="section-eyebrow">Tira-dúvidas</span>
+        <h2 class="section-title">Perguntas <span class="hl">frequentes</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Como recebo o material depois da compra?</summary>
+          <p class="answer">Você recebe o acesso imediatamente no WhatsApp e no e-mail cadastrados. Em poucos minutos já pode começar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Preciso ter experiência com jejum pra começar?</summary>
+          <p class="answer">Não. O material foi feito justamente pra quem nunca jejuou. Cada protocolo tem orientação passo a passo e versão adaptada pra iniciantes.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O jejum faz mal pra saúde?</summary>
+          <p class="answer">Os protocolos foram organizados com responsabilidade e seguem a base bíblica. Pessoas com condições médicas específicas (diabetes, gestantes, lactantes) devem consultar um médico antes de iniciar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>É um livro físico?</summary>
+          <p class="answer">Não. É um material digital, entregue na hora no seu WhatsApp e e-mail. Você pode ler no celular, computador ou imprimir se preferir.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Por que tão barato?</summary>
+          <p class="answer">Porque nossa missão é fazer essa mensagem chegar no maior número de lares cristãos possível. O valor cobre nossos custos e permite que a gente continue esse trabalho.</p>
+        </details>
+        <details class="faq-item">
+          <summary>E se eu não gostar?</summary>
+          <p class="answer">Tem 7 dias de garantia. Chama no WhatsApp e devolvemos os 10 reais sem perguntas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10 — CTA FINAL -->
+  <section class="final-cta" id="cta-final">
+    <div class="container final-cta-inner">
+      <span class="badge" style="background: rgba(23,30,25,0.08); border-color: rgba(23,30,25,0.2);"><span class="dot" style="background: var(--charcoal);"></span>Última chamada</span>
+      <h2>Comece o seu primeiro jejum bíblico ainda <span style="text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 8px;">essa semana</span></h2>
+      <p class="final-cta-lead">
+        Você tem duas escolhas agora: fechar essa página e continuar do mesmo jeito, ou clicar no botão abaixo e começar hoje o mesmo caminho que transformou Daniel, Ester, Elias e Moisés.
+      </p>
+
+      <a href="#" class="btn btn-dark btn-xl">Quero meu acesso por R$10 agora</a>
+      <p class="final-cta-micro">Acesso imediato • Garantia de 7 dias • Pagamento 100% seguro</p>
+
+      <div>
+        <span class="scarcity">⚡ Esse valor é promocional e pode subir a qualquer momento</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Os 4 Jejuns<span style="color: var(--yellow);">.</span></h4>
+          <p style="line-height: 1.5;">Material digital cristão com os 4 protocolos de jejum bíblico, resgatados diretamente das escrituras.</p>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#politica">Política de privacidade</a></li>
+            <li><a href="#termos">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@os4jejuns.com.br">contato@os4jejuns.com.br</a></li>
+            <li><a href="https://wa.me/">WhatsApp de suporte</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="disclaimer">Este material tem propósito informativo e espiritual. Não substitui orientação médica profissional.</p>
+        <p>&copy; <span id="year"></span> Os 4 Jejuns Bíblicos. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA MOBILE -->
+  <div class="sticky-cta">
+    <a href="#cta-final" class="btn btn-primary">Garantir por R$10 agora</a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
