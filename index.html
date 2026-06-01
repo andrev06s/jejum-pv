@@ -278,6 +278,37 @@
       margin: 0 auto 2.5rem;
       color: var(--ink-soft);
     }
+    .hero-mockup {
+      margin: 0 auto 2.75rem;
+      max-width: 460px;
+      width: 100%;
+      position: relative;
+    }
+    .hero-mockup::before {
+      content: "";
+      position: absolute;
+      inset: -8% -6% -4% -6%;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(239, 70, 35, 0.18), transparent 60%),
+        radial-gradient(circle at 70% 80%, rgba(253, 241, 238, 0.6), transparent 65%);
+      filter: blur(40px);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-mockup img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow:
+        0 30px 70px -25px rgba(239, 70, 35, 0.35),
+        0 25px 55px -30px rgba(45, 59, 66, 0.45);
+      transition: transform 600ms var(--ease);
+    }
+    .hero-mockup:hover img {
+      transform: translateY(-4px) scale(1.01);
+    }
     .hero-cta-row {
       display: flex;
       flex-wrap: wrap;
@@ -1053,6 +1084,10 @@
         <p class="hero-sub reveal-up">
           O mesmo jejum que transformou Daniel, Ester, Elias e Moisés agora ao alcance da sua rotina. Sem shake caro, sem cápsula importada, sem coach de R$497.
         </p>
+
+        <figure class="hero-mockup reveal-up">
+          <img src="https://i.postimg.cc/CM6Pp15G/Chat-GPT-Image-1-de-jun-de-2026-02-04-32.png" alt="Mockup do guia Os 4 Jejuns Bíblicos sobre superfície de linho com Bíblia, ramo de oliveira, pão artesanal, água em cerâmica e sementes" loading="eager" decoding="async" width="900" height="900" />
+        </figure>
 
         <div class="hero-cta-row reveal-up">
           <a href="#recebe" class="btn btn-primary btn-lg">Quero começar meu jejum bíblico por R$10</a>
